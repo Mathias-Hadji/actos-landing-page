@@ -132,7 +132,7 @@ nav a:hover::after {
 }
 
 
-// --------------- Home ---------------
+// --------------- Section Home ---------------
 
 .home {
     width: 100%;
@@ -210,5 +210,117 @@ nav a:hover::after {
 @media screen and (max-width: 450px) {
     .home img {
         width: 320px;
+    }
+}
+
+
+
+// --------------- Section Performances ---------------
+
+
+.performances {
+    height: auto;
+    padding: 120px 20px 170px;
+    margin-bottom: 100px;
+    background: #000;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    background-image: linear-gradient(45deg, transparent 0%, transparent 55%,rgba(64, 64, 64,0.04) 55%, rgba(64, 64, 64,0.04) 76%,transparent 76%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 14%,rgba(64, 64, 64,0.04) 14%, rgba(64, 64, 64,0.04) 41%,transparent 41%, transparent 100%),linear-gradient(45deg, transparent 0%, transparent 2%,rgba(64, 64, 64,0.04) 2%, rgba(64, 64, 64,0.04) 18%,transparent 18%, transparent 100%),linear-gradient(135deg, transparent 0%, transparent 61%,rgba(64, 64, 64,0.04) 61%, rgba(64, 64, 64,0.04) 71%,transparent 71%, transparent 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+
+.separation {
+    margin: 0 auto 70px;
+    height: 2px;
+    background: #000;
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+}
+
+.container-boxes {
+    width: 100%;
+    @extend %flex-double-center;
+}
+
+.box {
+    margin: 0 50px;
+}
+
+.box p {
+    text-align: center;
+}
+
+.number-clients {
+    font-size: 85px;
+    margin-bottom: 10px;
+}
+
+.type-clients {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-clients {
+    font-size: 20px;
+}
+
+
+// --------------- Responsive Section Performances ---------------
+
+@media screen and (max-width: 1000px) {
+    .number-clients {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .performances {
+        padding: 175px 20px 150px;
+    }
+
+    .container-boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 20px 0;
+    }
+
+    .separation {
+        margin: 0 auto 30px;
+        width: 30%;
+    }
+
+    .number-clients {
+        font-size: 50px;
+    }
+
+    .type-clients {
+        font-size: 25px;
+    }
+
+    .info-clients {
+        width: 100%;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .performances {
+        padding: 135px 20px 150px;
+    }
+
+    .number-clients {
+        font-size: 40px;
+    }
+
+    .type-clients {
+        font-size: 25px;
+    }
+
+    .info-clients {
+        width: 100%;
+        font-size: 22px;
     }
 }
