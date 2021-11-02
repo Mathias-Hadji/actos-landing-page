@@ -8,13 +8,24 @@ btnNav.addEventListener('click', () => {
 
     listNav.classList.toggle('active-nav');
 
-    if(imgBtn.src.includes('menu')) {
-        imgBtn.src = "../ressources/croix.svg";
-        imgBtn.style.width = "30px";
-        imgBtn.style.height = "30px";
+    if(window.location.href.includes('index')){
+        if(imgBtn.src.includes('menu')) {
+            imgBtn.src = "./ressources/croix.svg";
+            imgBtn.style.width = "30px";
+            imgBtn.style.height = "30px";
+        } else {
+            imgBtn.src = "./ressources/menu.svg";
+        }
     } else {
-        imgBtn.src = "./ressources/menu.svg";
+        if(imgBtn.src.includes('menu')) {
+            imgBtn.src = "../ressources/croix.svg";
+            imgBtn.style.width = "30px";
+            imgBtn.style.height = "30px";
+        } else {
+            imgBtn.src = "../ressources/menu.svg";
+        }
     }
+
 });
 
 
