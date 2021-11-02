@@ -1,0 +1,35 @@
+// ----------- Home -----------
+
+.title-features {
+    padding: 130px 0 20px;
+}
+
+.subtitle-features {
+    text-align: center;
+    font-size: 24px;
+}
+
+.container-btn-home {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.btn-features {
+    display: block;
+    text-decoration: none;
+    width: 200px;
+    padding: 15px;
+    background: $violet-main;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.ghost-btn {
+    border: 2px solid $violet-main;
+    background: transparent;
+    color: $violet-main;
+}
