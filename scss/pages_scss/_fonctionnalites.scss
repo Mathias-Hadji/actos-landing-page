@@ -137,3 +137,122 @@ form button {
         font-size: 17px;
     }
 }
+
+
+// ----------- Section Products -----------
+
+.galery-txt-pics {
+    width: 1300px;
+    margin: 0 auto;
+    @extend %flex-double-center;
+    flex-wrap: wrap;
+    margin-bottom: 200px;
+}
+
+.box-txt-galery {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-txt-galery p:nth-child(1) {
+    font-size: 50px;
+    font-weight: lighter;
+    padding: 0 0 20px 0;
+}
+
+.underline-violet {
+    width: 200px;
+    height: 3px;
+    background: $violet-main;
+    border: none;
+    margin: 0;
+}
+
+.box-txt-galery p:nth-child(3) {
+    font-size: 35px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+
+.box-txt-galery p:nth-child(4) {
+    font-size: 30px;
+    padding: 0 0 20px;
+}
+
+.box-txt-galery a {
+    color: #000;
+    font-size: 20x;
+    padding: 20px 0;
+}
+
+
+.box-img-galery {
+    border: 1px solid #000;
+    width: 500px;
+    height: 500px;
+    background: url('../../ressources/img-galerie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 50px;
+}
+
+
+// ----------- Responsive Section Products -----------
+
+@media screen and (max-width: 1300px) {
+
+    .galery-txt-pics {
+        width: 90%;
+    }
+
+    .box-txt-galery {
+        height: auto;
+        align-items: center;
+    }
+
+    .box-txt-galery p:nth-child(4) {
+        text-align: center;
+    }
+
+    .box-img-galery {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .box-txt-galery p:nth-child(1) {
+        font-size: 35px;
+    }
+
+    .galery-txt-pics {
+        margin-bottom: 100px;
+        margin: 5px;
+    }
+
+    .box-txt-galery {
+        margin: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .box-txt-galery p:nth-child(1) {
+        font-size: 35px;
+    }
+
+    .box-txt-galery p:nth-child(3) {
+        font-size: 25px;
+    }
+
+    .box-txt-galery p:nth-child(4) {
+        font-size: 25px;
+    }
+}
