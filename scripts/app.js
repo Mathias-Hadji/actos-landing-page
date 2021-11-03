@@ -25,7 +25,6 @@ btnNav.addEventListener('click', () => {
             imgBtn.src = "../ressources/menu.svg";
         }
     }
-
 });
 
 
@@ -53,4 +52,31 @@ allCross.forEach(cross => {
             currentChoice.style.padding = "0px 15px";
         }
     });
-})
+});
+
+
+
+// Onglets tarifs
+
+const choiceTarifs = Array.from(document.querySelectorAll('.choice'));
+const contentTarifs = Array.from(document.querySelectorAll('.panel'));
+
+choiceTarifs.forEach(choice => {
+    choice.addEventListener('click', (e) => {
+        
+        let indexClic = choiceTarifs.indexOf(e.target);
+
+        for(let i = 0; i < choiceTarifs.length; i++) {
+            
+            if(i === indexClic) {
+                choiceTarifs[i].classList.add('active-choice');
+                contentTarifs[i].classList.add('panel-active');
+                choiceTarifs[i].style.border = "1px solid #222";
+            } else {
+                choiceTarifs[i].classList.remove('active-choice');
+                contentTarifs[i].classList.remove('panel-active');
+                choiceTarifs[i].style.border = "none";
+            }
+        }
+    });
+});
