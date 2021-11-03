@@ -71,7 +71,7 @@ choiceTarifs.forEach(choice => {
             if(i === indexClic) {
                 choiceTarifs[i].classList.add('active-choice');
                 contentTarifs[i].classList.add('panel-active');
-                choiceTarifs[i].style.border = "1px solid #222";
+                choiceTarifs[i].style.border = "2px solid #333";
             } else {
                 choiceTarifs[i].classList.remove('active-choice');
                 contentTarifs[i].classList.remove('panel-active');
